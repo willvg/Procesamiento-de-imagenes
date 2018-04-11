@@ -1,0 +1,42 @@
+/*
+*	Intituto Tecnológico de Costa Rica
+*	Authors:
+*		Wilberth Varela
+*
+*	Procesamiento y analisis de imagenes digitales	
+*	I Semester, 2018
+*	Proyect 1
+*/
+
+
+Links de referencia
+
+Para las flechas: https://docs.opencv.org/3.0-beta/modules/imgproc/doc/drawing_functions.html
+
+Para los vectores: http://www.cplusplus.com/reference/vector/vector/push_back/
+
+Para formar los vectores en el tablero en vivo: https://docs.opencv.org/3.3.0/d7/d53/tutorial_py_pose.html
+												https://docs.opencv.org/3.3.1/d9/d0c/group__calib3d.html
+
+Para la calibracion de la camara: https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html
+
+los videos de referencia
+	https://www.youtube.com/watch?v=v8EiPKPqKa0
+	https://www.youtube.com/watch?v=HYDFBhB-yFg
+
+Para los puntos 3d: https://docs.opencv.org/java/2.4.9/org/opencv/core/Point3.html
+
+Para generar los archivos: https://docs.opencv.org/2.4/modules/core/doc/xml_yaml_persistence.html
+
+Referencia de calibracion: http://tecnicasdevision.blogspot.com.es/2014/05/calibrar-una-camara-con-opencv.html
+
+***********************************************************************************************************************
+***********************************************************************************************************************
+***********************************************************************************************************************
+Rutas para la posible ejecucion del programa.
+
+Ruta utilizada para tomar las fotos: /home/will/Documentos/Imagenes/proyecto1/ima
+Ruta utilizada leer la fotos: /home/will/Documentos/Imagenes/proyecto1/Imagenes/
+
+
+La parabra Usuario se cambia por el usuario de la computadora.

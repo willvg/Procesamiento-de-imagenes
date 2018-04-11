@@ -1,0 +1,49 @@
+I=imread("/home/will/Documentos/Imagenes/practica/lenna.png")
+   69 pkg load image
+   70 figura(1, "name", "Original")
+   71 figure(1, "name", "Original")
+   72 G= rgb2gray(I);
+   73 imshow(G);
+   74 figure(2,"name","Gris");
+   75 M= fspecial("average",15,15);
+   76 F= filter2(M,G);
+   77 imshow(F);
+   78 G=double(rgb2gray(I));
+   79 imshow(G);
+   80 G=double(rgb2gray(I))/255.0;
+   81 imshow(G);
+   82 F= filter2(M,G);
+   83 imshow(F);
+   84 imshow(imfilter(G,M,"replicate"));
+   85 
+   86 tic; imshow(imfilter(G,fspecial("average",150,150),"replicate")); toc
+   87 tic; imshow(imfilter(G,fspecial("average",15,15),"replicate")); toc
+   88 history
+   89 tic; imshow(imsmooth(G,"Average",150)); toc
+   90 P=zeros(512,512);
+   91 P(256,256)=1;
+   92 gs=fspecial("gaussian",51,51);
+   93 psf = (imfilter(P,gs));
+   94 imshow(psf/max(psf(:)));
+   95 imshow(psf/max(psf(:)));
+   96 gs=fspecial("gaussian",51,3);
+   97 psf = (imfilter(P,gs));
+   98 imshow(psf/max(psf(:)));
+   99 imshow(psf/max(psf(:)));
+  100 imshow(psf/max(psf(:)));
+  101 imshow(psf/max(psf(:)));
+  102 glenna=(imfilter(G,gs));
+  103 imshow(glenna);
+  104 help
+  105 help filter
+  106 A= ones(25,25);
+  107 B = [A 2*A; .5*A 3*A]/3;
+  108 imshow(B);
+  109 [xx,yy]= meshgrid(1:50,1:50);
+  110 figure(2);surf(xx,yy,B);
+  111 fB= imsmooth(B,"Gaussian",11);
+  112 imshow(fB);
+  113 fihure(4);
+  114 figure(4);
+  115 surf(xx,yy,fB);
+  116 history
